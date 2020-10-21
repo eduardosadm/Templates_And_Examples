@@ -1,4 +1,4 @@
- REQUIRES -Version 2.0
+ #REQUIRES -Version 2.0
 
 #Handle Exit Codes:
 trap {  $host.ui.WriteErrorLine($_.Exception); exit 90 }
