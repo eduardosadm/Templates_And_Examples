@@ -32,7 +32,7 @@ function DellDP_Install_Rem {
 #Handle Exit Codes:
 trap {  $host.ui.WriteErrorLine($_.Exception); exit 90 }
 
-Install
+#Install
     Try {$process = Start-Process -FilePath "$fileName" -ArgumentList "$arg" -PassThru -ErrorAction Stop
          Write-Output "Dell Data Protection Install Finished...`n"
     }
