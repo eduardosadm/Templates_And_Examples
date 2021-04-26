@@ -79,7 +79,7 @@ while($true) {
 $data | Group-Object display_name | Sort-Object name | Select-Object Count,name `
       | Export-Csv -Path $filepath -NoTypeInformation
 
-<# Optional data for software inventory, use with caution because this will pull software inventory for each device and possibly use all daily your API allowance
+
 #Get SofrtwareInv
 $page = 0
 $filepath = 'C:\Temp\SoftwareInv.csv'
@@ -119,9 +119,6 @@ foreach ($server in $servers) {
               | Sort-Object Display_Name | Export-Csv -Path $filepath -NoTypeInformation -Append -Force
 
 }
-
-#>
-
 
 ##Servers.Endpoints
 ##Reset Variables
