@@ -80,7 +80,7 @@ $data | Group-Object display_name | Sort-Object name | Select-Object Count,name 
       | Export-Csv -Path $filepath -NoTypeInformation
 
 
-#Get SofrtwareInv
+#Get SoftwareInv
 $page = 0
 $filepath = 'C:\Temp\SoftwareInv.csv'
 Set-Content $filepath -Value "Computer,display_name,version"
